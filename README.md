@@ -6,6 +6,8 @@ wonjun-lab 도구들의 Homebrew tap.
 - [codex-swap](https://github.com/wonjun-lab/codex-swap) — Codex CLI 계정 여러 개를 두고 사용량에 따라 바꿔 쓰는 도구
 
 ```sh
-brew install wonjun-lab/tap/nfd2nfc
+brew install wonjun-lab/tap/nfd2nfc && nfd2nfc setup   # setup: Finder 우클릭 메뉴 설치
 brew install wonjun-lab/tap/codex-swap
 ```
+
+> nfd2nfc 는 반드시 **탭 이름을 붙여** 설치하세요. `brew install nfd2nfc` 는 homebrew/core 의 이름만 같은 다른 도구를 설치합니다.
