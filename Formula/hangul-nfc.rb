@@ -1,8 +1,8 @@
 class HangulNfc < Formula
   desc "Fix macOS NFD Korean filenames by normalizing to NFC"
   homepage "https://github.com/wonjun-lab/hangul-nfc"
-  url "https://github.com/wonjun-lab/hangul-nfc/archive/refs/tags/v2.0.0.tar.gz"
-  sha256 "e40e68104360a5bf2a7bba2a626a53f6aea08807539e8cf0265fc3d3b3b0c3a8"
+  url "https://github.com/wonjun-lab/hangul-nfc/archive/refs/tags/v2.0.1.tar.gz"
+  sha256 "7828873719d447d995f2f8d82e6500d1c644567e53b5bc66dccae693d7422140"
   license "MIT"
 
   def install
@@ -17,6 +17,7 @@ class HangulNfc < Formula
 
       예전 이름 nfd2nfc에서 옮겨 왔다면 위 setup을 꼭 한 번 실행하세요 —
       메뉴·자동 감시 폴더·설정을 새 이름으로 옮기고 예전 흔적을 정리합니다.
+      (nfd2nfc 설치본은 brew upgrade만으론 옮겨지지 않습니다: brew migrate hangul-nfc)
 
       상태 점검: hangul-nfc doctor
       완전 제거: hangul-nfc uninstall  (메뉴·자동 감시·설정까지 지운 뒤 brew uninstall)
