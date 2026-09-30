@@ -10,4 +10,8 @@ brew install wonjun-lab/tap/hangul-nfc && hangul-nfc setup   # setup: Finder 우
 brew install wonjun-lab/tap/codex-swap
 ```
 
-> 예전 이름 `nfd2nfc` 로 설치했다면 `brew upgrade` 가 `hangul-nfc` 로 옮겨 줍니다(`formula_renames.json`). 그다음 `hangul-nfc setup` 을 한 번 실행하면 Finder 메뉴·자동 감시도 새 이름으로 옮겨집니다.
+> 예전 이름 `nfd2nfc` 로 설치했다면 **한 줄 설치를 다시 실행**하세요 — Homebrew 설치본을 새 이름으로 옮기고(`brew migrate`) Finder 메뉴·자동 감시까지 옮깁니다.
+> ```sh
+> curl -fsSL https://raw.githubusercontent.com/wonjun-lab/hangul-nfc/main/install.sh | sh
+> ```
+> `brew upgrade` 만으로는 옮겨지지 않습니다(Homebrew 탭 신뢰 정책). 직접 하려면 `brew trust --formula wonjun-lab/tap/hangul-nfc && brew migrate hangul-nfc && brew upgrade hangul-nfc && hangul-nfc setup`.
